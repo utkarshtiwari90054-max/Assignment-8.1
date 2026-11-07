@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard - CSS Grid Layout</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="dashboard">
+
+    <!-- 1. Dashboard header -->
+    <header class="header">
+      <h1 class="brand">Flow<span>ly</span> Dashboard</h1>
+      <div class="user">
+        <span class="user-name">Hi, Alex</span>
+        <span class="avatar" aria-hidden="true">A</span>
+      </div>
+    </header>
+
+    <!-- 2a. Sidebar -->
+    <aside class="sidebar">
+      <nav>
+        <ul>
+          <li><a href="#" class="active">Overview</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Reports</a></li>
+          <li><a href="#">Team</a></li>
+          <li><a href="#">Settings</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- 2b. Main content area -->
+    <main class="main">
+      <h2 class="page-title">Overview</h2>
+
+      <!-- 3. Statistic cards -->
+      <section class="stats">
+        <article class="stat">
+          <p class="stat-label">Total users</p>
+          <p class="stat-value">12,480</p>
+          <p class="stat-change up">+8.2% this month</p>
+        </article>
+        <article class="stat">
+          <p class="stat-label">Revenue</p>
+          <p class="stat-value">$48,900</p>
+          <p class="stat-change up">+5.4% this month</p>
+        </article>
+        <article class="stat">
+          <p class="stat-label">Active projects</p>
+          <p class="stat-value">86</p>
+          <p class="stat-change down">-2.1% this month</p>
+        </article>
+        <article class="stat">
+          <p class="stat-label">Open tasks</p>
+          <p class="stat-value">342</p>
+          <p class="stat-change up">+12 this week</p>
+        </article>
+      </section>
+
+      <section class="panel">
+        <h3>Recent activity</h3>
+        <ul>
+          <li>Maya completed "Design review"</li>
+          <li>Sam created project "Q4 launch"</li>
+          <li>Priya commented on "Onboarding flow"</li>
+        </ul>
+      </section>
+    </main>
+
+  </div>
+</body>
+</html>
